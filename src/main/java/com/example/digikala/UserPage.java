@@ -11,15 +11,15 @@ import java.sql.SQLException;
 
 public class UserPage {
     @FXML
-    private VBox Mobiles;
+    private VBox Mobiles=new VBox();
     @FXML
-    private VBox Laptops;
+    private VBox Laptops=new VBox();
     @FXML
-    private VBox TVs;
+    private VBox TVs=new VBox();
     @FXML
-    private VBox Books;
+    private VBox Books=new VBox();
     @FXML
-    private VBox Watches;
+    private VBox Watches=new VBox();
     private String username;
     private String password;
     private User Curuser;
@@ -45,12 +45,7 @@ public class UserPage {
                 double price=Double.parseDouble(resultSet.getString("Price"));
                 int quantity=Integer.parseInt(resultSet.getString("Quantity"));
                 String category="Laptop";
-                Product product=new Product();
-                product.setName(name);
-                product.setPrice(price);
-                product.setQuantity(quantity);
-                product.setCategory(category);
-                DigikalaService.addProduct(product);
+                showLaptops(name,price,quantity);
             }
         }
         catch (Exception e){
@@ -63,12 +58,7 @@ public class UserPage {
                 double price=Double.parseDouble(resultSet.getString("Price"));
                 int quantity=Integer.parseInt(resultSet.getString("Quantity"));
                 String category="TV";
-                Product product=new Product();
-                product.setName(name);
-                product.setPrice(price);
-                product.setQuantity(quantity);
-                product.setCategory(category);
-                DigikalaService.addProduct(product);
+                showTVs(name,price,quantity);
             }
         }
         catch (Exception e){
@@ -81,12 +71,7 @@ public class UserPage {
                 double price=Double.parseDouble(resultSet.getString("Price"));
                 int quantity=Integer.parseInt(resultSet.getString("Quantity"));
                 String category="Book";
-                Product product=new Product();
-                product.setName(name);
-                product.setPrice(price);
-                product.setQuantity(quantity);
-                product.setCategory(category);
-                DigikalaService.addProduct(product);
+                showBooks(name,price,quantity);
             }
         }
         catch (Exception e){
@@ -99,12 +84,7 @@ public class UserPage {
                 double price=Double.parseDouble(resultSet.getString("Price"));
                 int quantity=Integer.parseInt(resultSet.getString("Quantity"));
                 String category="Watch";
-                Product product=new Product();
-                product.setName(name);
-                product.setPrice(price);
-                product.setQuantity(quantity);
-                product.setCategory(category);
-                DigikalaService.addProduct(product);
+                showWatches(name,price,quantity);
             }
         }
         catch (Exception e){

@@ -136,6 +136,14 @@ public class DigikalaService {
         //*print "No such user";
         return "no such seller";
     }
+    public static User searchuser(String username){
+        for(User temp:users){
+            if(temp.getUsername().equals(username)){
+                return temp;
+            }
+        }
+        return null;
+    }
     public void logout() {
         curUser=null;
         curSeller=null;

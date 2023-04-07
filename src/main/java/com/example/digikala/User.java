@@ -59,24 +59,22 @@ public class User {
         cart.add(new Pair<>(product,num));
         //*print "Product added successfully.";
     }
-    public void viewCart() {
-        if(cart.isEmpty()){
-            //*print "Is empty."
-            return;
-        }
-        for(Pair<Product,Integer> cur: cart){
-            DigikalaService.ToString(cur.getKey(),cur.getValue());
-        }
+    public ArrayList<Pair<Product, Integer>> getCart() {
+        return cart;
     }
-    public void viewOrders() {
-        if(orders.isEmpty()){
-            //*print "Is empty."
-            return;
-        }
-        for(Pair<Product,Integer> cur: orders){
-            DigikalaService.ToString(cur.getKey(),cur.getValue());
-        }
+
+    public void setCart(ArrayList<Pair<Product, Integer>> cart) {
+        this.cart = cart;
     }
+
+    public ArrayList<Pair<Product, Integer>> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(ArrayList<Pair<Product, Integer>> orders) {
+        this.orders = orders;
+    }
+
 }
 class Admin extends User{
 
