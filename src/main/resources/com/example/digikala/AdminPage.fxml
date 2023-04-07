@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.digikala.AdminPage">
+   <children>
+      <Button fx:id="addadmin" layoutX="218.0" layoutY="224.0" mnemonicParsing="false" onAction="#AddAdmin" prefHeight="63.0" prefWidth="178.0" text="Add admin">
+         <font>
+            <Font name="Gabriola" size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="addseller" layoutX="218.0" layoutY="302.0" mnemonicParsing="false" onAction="#AddSeller" prefHeight="68.0" prefWidth="178.0" text="Add seller">
+         <font>
+            <Font name="Gabriola" size="36.0" />
+         </font>
+      </Button>
+      <TextField fx:id="username" layoutX="164.0" layoutY="106.0" prefHeight="47.0" prefWidth="270.0" promptText="Username" />
+      <PasswordField fx:id="password" layoutX="163.0" layoutY="164.0" prefHeight="47.0" prefWidth="270.0" promptText="Password" />
+      <Label fx:id="label" layoutX="262.0" layoutY="21.0" textFill="#c4b100">
+         <font>
+            <Font name="Gabriola" size="48.0" />
+         </font>
+      </Label>
+      <Button layoutX="536.0" layoutY="374.0" mnemonicParsing="false" onAction="#GoMain" prefHeight="11.0" prefWidth="64.0" text="Main menu">
+         <font>
+            <Font name="Gabriola" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
