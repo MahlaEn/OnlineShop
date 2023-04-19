@@ -20,3 +20,4 @@ made the front not progress further.
 For showing comments of product X we use table "Comments" and show all columns which those "ID" is equal to X.
 
 ## UML Diagram
+![Untitled design (1)](https://user-images.githubusercontent.com/77670851/233021163-aefede7d-4b6b-46c2-adec-69278649ed7e.png)
