@@ -7,14 +7,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="UserPage" prefHeight="493.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.digikala.UserPage">
+<AnchorPane fx:id="UserPage" prefHeight="493.0" prefWidth="600.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.digikala.UserPage">
    <children>
-      <Label fx:id="Welcome" layoutX="190.0" layoutY="32.0" prefHeight="66.0" prefWidth="220.0" text="Welcome !" textFill="#ffc800">
+      <Label fx:id="Welcome" layoutX="152.0" prefHeight="79.0" prefWidth="346.0" text="Welcome !" textFill="#ffc800">
          <font>
-            <Font name="French Script MT" size="48.0" />
+            <Font name="French Script MT" size="90.0" />
          </font>
       </Label>
-      <Accordion layoutX="14.0" layoutY="123.0">
+      <Accordion layoutX="14.0" layoutY="123.0" prefHeight="302.0" prefWidth="562.0">
         <panes>
           <TitledPane animated="false" prefHeight="137.0" prefWidth="395.0" text="Mobile">
             <content>
