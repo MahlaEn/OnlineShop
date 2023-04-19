@@ -29,3 +29,10 @@ Scince the project contain FXML files, you need to download the appropriate JDK 
 3. Created search option to easily find products
 4. Used Database for saving data
 5. Created a history of sales and transactions for sellers
+
+
+--------------
+## Resources
+### Video Playlists
+- [JavaFX tutorial](https://youtu.be/9XJicRt_FaI)
+- [MySQL for Database](https://www.youtube.com/watch?v=lz3HilC2bDs&list=PLTfxx5t6obt-fvAmlpoy6bgwFNkBRFSSP&index=1)
